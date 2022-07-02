@@ -1,8 +1,15 @@
 #include <QCoreApplication>
 
-int main(int argc, char *argv[])
+#include <iostream>
+
+#include "Problems.h"
+
+int main(int argc, char* argv[])
 {
     QCoreApplication a(argc, argv);
 
-    return a.exec();
+    std::string test = "ABCDEFGHIJK";
+    zigZag(test, 3);
+
+    return 0;
 }
